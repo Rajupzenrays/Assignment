@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = "foo bar baz foo foo baz";
+        var str1 = str.split(" ");
+        var counter = 0;
+        str1.forEach(function(val) {
+            if(val=="foo"){
+                counter ++
+            }
+        });
+        alert(`"foo" is ${counter} times repeated. `)
+    </script>
+</body>
+
+</body>
+</html>

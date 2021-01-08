@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> rem vs em</title>
+	<style> 
+		html{
+			font-size: 20px;
+		}
+
+		#divone{
+			font-size: 10px;
+		}
+		#divtwo{
+			font-size: 20px;
+		}
+
+		#divonechild{
+			width: 20em;
+			border: 2px solid red;
+		}
+
+		#divtwochild{
+			width: 10rem;
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+		<div id="divone"><div id="divonechild">Hello</div></div>
+		<div id="divtwo"><div id="divtwochild">Hello</div></div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float Example</title>
+	<style>
+		img{
+			height: 200px;
+			width: 200px;
+			margin: 0;
+			border: 2px solid red;
+
+		}
+		.clear-fix:before,.clear-fix:after{
+			content: "";
+			display: table;
+		}
+		.clear-fix:after{
+			clear: both;
+		}
+		.clear-fix{
+			zoom:1; 
+		}
+
+		
+		.float-left{
+			float: left;
+
+		}
+		.float-right{
+			float: right;
+			
+		}
+		#outerDiv{
+			margin-top: 100px;
+			margin-left: 40px;
+			width: 670px;
+			border: 2px solid red;
+			padding: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="outerDiv" class="clear-fix">
+		The content is part of outer div
+		<img class="float-left" src="banner.jpg">
+		<img class="float-right" src="banner.jpg">
+
+	</div>
+
+
+</body>
+</html>
